@@ -45,7 +45,7 @@ const Mint = ({
                 : "🤔 Unknown Status 🤔"}
             </span> */}
             <span className="mint-price">
-              {(mintPrice * mintCount) / 10000} ETH
+              {(mintPrice * mintCount) / 10000} BNB
             </span>
             <div className="mint-counter flex">
               <FiMinusCircle onClick={onDecreaseMintCount} />
