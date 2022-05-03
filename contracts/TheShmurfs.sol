@@ -34,12 +34,12 @@ contract TheShmurfs is Ownable, ERC721A {
   bool private revealed;
 
   uint public MAX_SUPPLY          = 1000;
-  uint private constant PRICE_WHITELIST     = 0.08 ether;
-  uint private constant PRICE_PUBLIC        = 0.09 ether;
+  uint private constant PRICE_WHITELIST     = 0.01 ether;
+  uint private constant PRICE_PUBLIC        = 0.02 ether;
   uint private constant MAX_WHITELIST_BATCH = 3;
 
-  address private fundWallet    = payable(0xe8a18cD415e54A99FCd2d89F52434dd8259926fb); // Owner Fund Wallet Address
-  address private devOneWallet  = payable(0x083f8CDfE40BB7Db756A9BF2C6b4Ad18d64Ca4d7); // Developer Wallet Address
+  address private fundWallet    = payable(0x483D14D8FAe52A19791C8E1d79eFf31db29F437b); // Owner Fund Wallet Address
+  address private devOneWallet  = payable(0x483D14D8FAe52A19791C8E1d79eFf31db29F437b); // Developer Wallet Address
 
   mapping(address => uint8) private whitelistBuyList;
 

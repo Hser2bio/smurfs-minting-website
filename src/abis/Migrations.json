@@ -12,7 +12,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -25,7 +26,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -663,7 +665,7 @@
   "sourceMap": "66:352:10:-:0;;;90:33;;;-1:-1:-1;;;;;;90:33:10;113:10;90:33;;;66:352;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "66:352:10:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;;;;;;;983:25:12;;;971:2;956:18;127:36:10;;;;;;;;90:33;;;;;-1:-1:-1;;;;;90:33:10;;;;;;-1:-1:-1;;;;;373:32:12;;;355:51;;343:2;328:18;90:33:10;310:102:12;313:103:10;;;;;;:::i;:::-;;:::i;:::-;;;225:5;;-1:-1:-1;;;;;225:5:10;211:10;:19;196:101;;;;-1:-1:-1;;;196:101:10;;619:2:12;196:101:10;;;601:21:12;658:2;638:18;;;631:30;697:34;677:18;;;670:62;-1:-1:-1;;;748:18:12;;;741:49;807:19;;196:101:10;;;;;;;;375:24:::1;:36:::0;313:103::o;14:190:12:-;73:6;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;-1:-1:-1;175:23:12;;84:120;-1:-1:-1;84:120:12:o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "D:\\Development\\smurfs-minting-website-main\\contracts\\Migrations.sol",
+  "sourcePath": "/root/tests/smurfs-minting-website/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1460,9 +1462,17 @@
     "name": "solc",
     "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
-  "networks": {},
-  "schemaVersion": "3.4.4",
-  "updatedAt": "2022-04-14T01:04:38.882Z",
+  "networks": {
+    "97": {
+      "events": {},
+      "links": {},
+      "address": "0x9E21b0A911914ffe64054dDF42eB72e3Fc31d46d",
+      "transactionHash": "0x1d0be38552025236b806950e81248d68874329a08fb6b2e42a171638c1c28289"
+    }
+  },
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-05-02T14:35:15.524Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

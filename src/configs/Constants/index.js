@@ -1,7 +1,7 @@
 export const CHAIN_ID = {
   // Binance Smart Chain
-  ETH_MAINNET: 1,
-  ETH_TESTNET: 4,
+  ETH_MAINNET: 97,
+  ETH_TESTNET: 97,
 }
 
 export const RPC_URL = {

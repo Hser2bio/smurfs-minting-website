@@ -32,7 +32,7 @@ const WLMint = ({
             </div>
             <h3>Welcome to whitelist mint</h3>
             <span className="mint-price">
-              {(mintPrice * mintCount) / 10000} ETH
+              {(mintPrice * mintCount) / 10000} BNB
             </span>
             <div className="mint-counter flex">
               <FiMinusCircle onClick={onDecreaseMintCount} />
